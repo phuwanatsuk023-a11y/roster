@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-sarabun {
+    font-family: 'Sarabun', 'TH Sarabun New', sans-serif;
+  }
+}
+
+/* Print Specific Rules for Official Thai Government Documents (A4 Landscape) */
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 10mm 8mm 10mm 8mm;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-family: 'Sarabun', 'TH Sarabun New', sans-serif !important;
+    font-size: 11pt !important;
+  }
+
+  /* Force borders to print crisp black */
+  table, th, td {
+    border-color: #000000 !important;
+  }
+
+  .official-header {
+    margin-bottom: 12px !important;
+  }
+
+  .official-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    font-size: 10pt !important;
+  }
+
+  .official-table th {
+    background-color: #f3f4f6 !important;
+    color: #000000 !important;
+    padding: 4px !important;
+  }
+
+  .official-table td {
+    padding: 4px !important;
+    vertical-align: top !important;
+  }
+
+  tr {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+}
