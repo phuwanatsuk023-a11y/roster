@@ -1,0 +1,6 @@
+{
+  "name": "ระบบจัดเวรยาม (Google Sheets Sync)",
+  "description": "ระบบจัดเวรยามและบันทึกข้อมูลบุคลากร วันหยุด จุดเวร ลงใน Google Sheets ผ่าน Google Apps Script API แบบเรียลไทม์",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
